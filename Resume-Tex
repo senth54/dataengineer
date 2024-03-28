@@ -1,0 +1,142 @@
+Jake's Resume
+
+We can’t find any sections or subsections in this file.
+Find out more about the file outline
+Editor mode.
+Selection deleted
+▾
+▾
+▾
+▾
+▾
+%-------------------------
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	
+	%----------HEADING----------
+	
+	
+	\begin{center}
+		\textbf{\Huge \scshape Senthilnathan S} \\ \vspace{1pt}
+		\small +91-8939321022 $|$ \href{mailto:senth54@gmail.com}{\underline{senth54@gmail.com}} $|$ 
+		\href{linkedin.com/in/senthil-data-enthusiast}{\underline{linkedin.com/in/senthil-data-enthusiast}} $|$
+		\href{github.com/senth54/dataengineer}{\underline{github.com/senth54/dataengineer
+			\end{center}
+			
+			%-----------AboutME-----------
+			\section{Profile}
+			\resumeSubHeadingListStart
+			\resumeSubheading
+              {Data Enthusiast} - {}{}{}Eager to work in data related software job roles. Experienced as Data Engineer, Team lead, Software developer, Technical lead. Experienced in building data mesh, data warehouse, ETL integration for more than 10 years and have relevant software experience of 15 years.
+			\resumeSubHeadingListEnd
+            %
+			%-----------PROGRAMMING SKILLS-----------
+			\section{Technical Skills}
+			\begin{itemize}[leftmargin=0.15in, label={}]
+				\small{\item{
+						\textbf{Languages}{: Python, SQL (Oracle 9i,11g, Teradata, BigQuery, HIVE, SQL server), Scala, Spark, Java} \\
+						\textbf{Utilities}{: Airflow cloud composer, GCS bucket, Dataproc,Cloud SQL, Cloud function Control-M, UC-4, Unix Bash scripting, Informatica Powercenter, REST API} \\
+						\textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, IntelliJ } \\
+						\textbf{Libraries}{: pandas, NumPy, Matplotlib}
+				}}
+			\end{itemize}
+			%-----------EDUCATION-----------
+			\section{Education}
+			\resumeSubHeadingListStart
+			\resumeSubheading
+			{The University of Auckland}{Auckland, New Zealand}
+			{Post graduate Diploma in Computer Science}{July 2011 -- May 2012}
+			\resumeSubheading
+			{College of Engineering, Guindy, Anna University}{Chennai, India}
+			{Masters in Science (5 years Integrated), Information Technology}{June 2002 -- Apr 2007}
+			\resumeSubHeadingListEnd
+			
+			
+			%-----------EXPERIENCE-----------
+			\section{Experience}
+			\resumeSubHeadingListStart
+			
+			\resumeSubheading
+			{Member of Technical Staff, Team Lead}{08 Feb 2023 -- 01 April 2024}
+			{PayPal India}{Chennai, India}
+			\resumeItemListStart
+			\resumeItem{Automation of Bug Triage - Using internal tool REST API's and parsing the JSON logs for possible issue in probable microservice component.}
+
+Senthilnathan S
++91-8939321022 | senth54@gmail.com | linkedin.com/in/senthil-data-enthusiast |
+Profile
+Data Enthusiast -
+Eager to work in data related software job roles. Experienced as Data Engineer, Team lead, Software developer,
+Technical lead. Experienced in building data mesh, data warehouse, ETL integration for more than 10 years and have
+relevant software experience of 15 years.
+Technical Skills
+Languages: Python, SQL (Oracle 9i,11g, Teradata, BigQuery, HIVE, SQL server), Scala, Spark, Java
+Utilities: Airflow cloud composer, GCS bucket, Dataproc,Cloud SQL, Cloud function Control-M, UC-4, Unix Bash
+scripting, Informatica Powercenter, REST API
+Developer Tools: Git, Google Cloud Platform, VS Code, IntelliJ
+Libraries: pandas, NumPy, Matplotlib
+Education
+The University of Auckland Auckland, New Zealand
+Post graduate Diploma in Computer Science July 2011 – May 2012
+College of Engineering, Guindy, Anna University Chennai, India
+Masters in Science (5 years Integrated), Information Technology June 2002 – Apr 2007
+Experience
+Member of Technical Staff, Team Lead 08 Feb 2023 – 01 April 2024
+PayPal India Chennai, India
+• Automation of Bug Triage - Using internal tool REST API’s and parsing the JSON logs for possible issue in
+probable microservice component.
+• Migration of SSIS jobs, Power-BI report templates to Google cloud platform - Bigquery. Spark-scala architecture
+for Hyperwallet reports.
+• Enhancement, tuning and support for Spark-Scala based Merchant reports, fetching data from various database and
+cloud - AWS redshift, Google cloud Big query and Oracle tables.
+• Reviewing support activities to mitigate Priority P1, P2, P3 Incidents for Merchant reporting, Checkout, Billing
+and subscription PayPal products.
+Data Engineer III 10 Jun 2019 – 08 Feb 2023
+PayPal India Chennai, India
+• ETL pipeline design, develop and support engineer. Lead juniors on ETL technical stack.
+• Building ETL pipeline and Data mart for Sales team.
+• Developing Teradata BTEQ’s,MLOAD, FLOAD, Control-M jobs, UC4 Jobs, Unix Scripts. Designing and
+implementing staging to Reporting layer tables for multiple business use cases for sales cross sell, upsell and
+declines.
+• Integrating ETL pipeline to Salesforce Objects - Leads, Opportunities, SSO (Custom Object)
+• Migrating the ETL pipeline to scala-spark jar and deploying to Google cloud - Bigquery. Scheduling the flow via
+Airflow, and using Google dataproc to deploy the code.
+• Streaming live NOSQL data from MongoDB in JSON format and publishing to Apache streaming service for live
+feedback of product integration
+• Working with data scientists and business analysts code in Python scripts, converting it to production ready flow in
+GCP and Teradata.
+• Modeling the tables for GCP migration and Sales cross-sell data mart.
+• Converting Python pandas Dataframes into Scala-Spark transformations for production scheduled run.
+Technical Lead 25 Jan 2019 – 31 May 2019
+Standard Chartered Chennai, India
+• Explored methods to automate complex ETL workflows in Scala-Spark code in Talend.
+• Optimize and enhance existing transformation in spark-scala code for new business use case in RISK.
+Senior Associate - Projects 02 Feb 2015 – 03 Jan 2019
+Cognizant Technology Solutions Chennai, India
+• Design, Develop and Support ETL workflows. Data extraction performed in Informatica and transformation
+performed in Teradata BTEQ’s.
+• Leading a team of size 4 in Technical design and implementation. Direct coordinated with clients on task, user
+stories, estimation, planning and tracking the progress.
+• Modeling the tables in star and snowflake pattern from denormalizing reporting data, used by multiple downstream
+Tableau reports.
+Senior Application Developer 24 Sep 2012 – 07 Jan 2019
+IBM India Private Limited Chennai, India
+• Support and enhancement of ETL flows for Wellpoint Insurance - Balancing and Reconciliation.Technologies - SQL,
+Informatica, Unix, Teradata.
+Senior Systens Engineer 11 Jun 2007 – 01 Jul 2011
+Infosys Limited Chennai, India
+• Design and Develop - SQL, PL/SQL stored procedures as back end calculation for Tourism product and Telecom
+product.
+• Development and maintenance of Reports in Crystal reports - with Microsoft SQL server SQL’s and SSIS packages
+jobs.
+Achievements
+• Ramp-Up more than 20 members on PayPal merchant products for Level 1 triage in less than 2 months.
+• Orion Award Winner 2013 – Award from IBM recognizing their employee
+• 2008 - Received Appreciations for stimulated Crystal report Desktop Video Tutorial at Organization Level - Infosys
