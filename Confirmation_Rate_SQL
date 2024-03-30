@@ -77,37 +77,20 @@ User 2 made 2 requests where one was confirmed and the other timed out. The conf
 
 SQL Query:
 +--------+
+# Works in MySQL
+Select
+s.user_id,
+Case 
+when c.user_id is null
+then
+0.00 
+Else
+round(sum(action='confirmed')/count(action),2)
+End as confirmation_rate 
+from 
+signups s
+LEFT outer Join
+confirmations c
+on s.user_id=c.user_id
+group by s.user_id
 
-Select User_id, 0 as confirmation_Rate
-from
-(
-Select user_id,action, Count(action) Over (Partition by user_id order by user_id) as cnt
-from Confirmations 
-group by user_id,action
-) where cnt =1 and action='timeout'
-group by user_id, confirmation_rate
-UNION ALL
-Select user_id,0.00 as confirmation_rate  from Signups 
-where user_id not in
-(
-select user_id from Confirmations
-)
-group by user_id, confirmation_rate
-UNION ALL
-Select User_id, 1 as confirmation_Rate
-from
-(
-Select user_id,action, Count(action) Over (Partition by user_id order by user_id) as cnt
-from Confirmations 
-group by user_id,action
-) where cnt =1 and action='confirmed'
-group by user_id, confirmation_rate
-UNION ALL
-Select User_id, 0.5 as confirmation_Rate
-from
-(
-Select user_id,action, Count(action) Over (Partition by user_id order by user_id) as cnt
-from Confirmations 
-group by user_id,action
-) where cnt > 1 
-group by user_id, confirmation_rate
