@@ -1,0 +1,31 @@
+Given Employee Time In and TimeOut data for every day
+Return employee Id with number of hours worked during weekend.
+To make the data simple data was provided only One TimeIn and One Timeout.
+
+Approach
+  1. First query and find out only weekend data. It is achieved by DAYOFWEEK() function on timestamp. Used in Filter condition
+  2. Group the data for each employee id per day. Use date() function to extract date from timestamp
+  3. Now you have employee data daily data, Find StartTime when employee Logged in by using Min() on Timestamp and similarly find EndTime when Employee Logged Out by applying Max() function on timestamp
+  4. Hours Worked should be difference in number of hours between Min and Max - use TIMESTAMPDIFF
+     Note - This may not work, if multiple timein and timeout are present. In Such case TimeStampDIFF between each TimeIn and Timeout needs to be derived in Minutes, Added up and Divided by 60 to deduce Hours worked
+  5. Now, with all this data in Subquery, Select needed Employee Id grouped and Number of Hours summed up
+
+WITH
+temp_tbl AS
+(
+SELECT
+emp_id, 
+date(timestamp) as dat,
+TIMESTAMPDIFF(HOUR,min(timestamp),max(timestamp)) as hours_worked
+FROM
+ATTENDANCE
+where DAYOFWEEK(timestamp) in (1,7)
+group by emp_id,dat
+)
+SELECT 
+emp_id,
+sum(hours_worked) as work_hours
+FROM
+temp_tbl
+group by emp_id
+;
